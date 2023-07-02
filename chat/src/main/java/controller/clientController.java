@@ -229,6 +229,14 @@ public class clientController extends Thread{
    }
 
    public void messageSendOnAction(MouseEvent event) {
+      String message = messageField.getText();
+      writer.println(lblName.getText() + ": " + message);
+
+      messageField.clear();
+
+      if (message.equalsIgnoreCase("BYE") || (message.equalsIgnoreCase("logout"))){
+         System.exit(0);
+      }
 
    }
 
@@ -241,6 +249,7 @@ public class clientController extends Thread{
    }
 
    public void sad(MouseEvent event) {
+
 
    }
 

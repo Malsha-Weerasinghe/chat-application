@@ -245,11 +245,16 @@ public class clientController extends Thread{
    }
 
    public void sendImageOnAction(MouseEvent event) {
+      Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+      fileChooser = new FileChooser();
+      fileChooser.setTitle("Image View");
+      this.file = fileChooser.showOpenDialog(stage);
+      writer.println(lblName.getText() + " " + "img" + file.getPath());
 
    }
 
    public void viewEmojiOnAction(MouseEvent event) {
-
+         emojiPane.setVisible(true);
    }
 
    public void wonder(MouseEvent event) {

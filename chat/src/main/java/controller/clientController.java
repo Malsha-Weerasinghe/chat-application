@@ -241,14 +241,23 @@ public class clientController extends Thread{
    }
 
    public void money(MouseEvent event) {
+      String emoji = new String(Character.toChars(128546));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 
    public void normal(MouseEvent event) {
+      String emoji = new String(Character.toChars(128546));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 
    public void sad(MouseEvent event) {
+      String emoji = new String(Character.toChars(128546));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
 
    }

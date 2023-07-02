@@ -164,12 +164,99 @@ public class clientController extends Thread{
       }catch (Exception e){
          e.printStackTrace();
       }
+   }
 
+   public void annoying(MouseEvent event) {
 
+   }
+
+   public void closeOnAction(MouseEvent event) {
+      System.exit(0);
+
+   }
+
+   public void cryNo(MouseEvent event) {
+
+   }
+
+   public void cryYes(MouseEvent event) {
+
+   }
+
+   public void dream(MouseEvent event) {
+
+   }
+
+   public void eww(MouseEvent event) {
+
+   }
+
+   public void happy(MouseEvent event) {
+
+   }
+
+   public void happyCry(MouseEvent event) {
+
+   }
+
+   public void hideEmoji(MouseEvent event) {
+      emojiPane.setVisible(false);
+   }
+
+   public void joke(MouseEvent event) {
+
+   }
+
+   public void kidding(MouseEvent event) {
+
+   }
+
+   public void love(MouseEvent event) {
 
    }
 
    public void messageOnAction(ActionEvent event) {
 
-    }
+      String message = messageField.getText();
+      writer.println(lblName.getText() +": " + message);
+
+      messageField.clear();
+
+      if(message.equalsIgnoreCase("BYE") || message.equalsIgnoreCase("logout")){
+         System.exit(0);
+      }
+
+   }
+
+   public void messageSendOnAction(MouseEvent event) {
+
+   }
+
+   public void money(MouseEvent event) {
+
+   }
+
+   public void normal(MouseEvent event) {
+
+   }
+
+   public void sad(MouseEvent event) {
+
+   }
+
+   public void sendImageOnAction(MouseEvent event) {
+
+   }
+
+   public void viewEmojiOnAction(MouseEvent event) {
+
+   }
+
+   public void wonder(MouseEvent event) {
+
+   }
+
+   public void wow(MouseEvent event) {
+
+   }
 }

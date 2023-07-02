@@ -13,7 +13,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="512.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.clientController">
    <children>
       <AnchorPane prefHeight="512.0" prefWidth="464.0">
@@ -25,28 +24,28 @@
                   <Image url="@../assests/images.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="60.0" fitWidth="56.0" layoutX="394.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="60.0" fitWidth="56.0" layoutX="394.0" layoutY="15.0" onMouseClicked="#closeOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assests/391045.png" />
                </image>
             </ImageView>
             <ScrollPane fx:id="messageShowField" layoutX="22.0" layoutY="99.0" prefHeight="417.0" prefWidth="426.0">
                <content>
-                  <VBox fx:id="vBox" prefHeight="403.0" prefWidth="426.0" />
+                  <VBox fx:id="vBox" onMouseClicked="#hideEmoji" prefHeight="403.0" prefWidth="426.0" />
                </content>
             </ScrollPane>
-            <TextField fx:id="messageField" layoutX="54.0" layoutY="534.0" onAction="#messageOnAction" prefHeight="39.0" prefWidth="322.0" />
-            <ImageView fitHeight="39.0" fitWidth="31.0" layoutX="422.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+            <TextField fx:id="messageField" layoutX="54.0" layoutY="534.0" onAction="#messageOnAction" onMouseClicked="#hideEmoji" prefHeight="39.0" prefWidth="322.0" />
+            <ImageView fitHeight="39.0" fitWidth="31.0" layoutX="422.0" layoutY="538.0" onMouseClicked="#messageSendOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assests/download.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="382.0" layoutY="534.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="382.0" layoutY="534.0" onMouseClicked="#viewEmojiOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assests/smile_normal.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="12.0" layoutY="534.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="12.0" layoutY="534.0" onMouseClicked="#sendImageOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assests/download.jpeg" />
                </image>
@@ -92,77 +91,77 @@
                         <RowConstraints maxHeight="28.799999999999983" minHeight="10.0" prefHeight="28.799999999999983" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" onMouseClicked="#annoying" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <image>
                               <Image url="@../assests/baww.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="25.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="1">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="25.0" layoutY="13.0" onMouseClicked="#love" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="1">
                            <image>
                               <Image url="@../assests/love.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="24.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="24.0" layoutY="12.0" onMouseClicked="#eww" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1">
                            <image>
                               <Image url="@../assests/blaaaak.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="25.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="25.0" layoutY="12.0" onMouseClicked="#money" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
                            <image>
                               <Image url="@../assests/money.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="25.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="25.0" layoutY="56.0" onMouseClicked="#kidding" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
                            <image>
                               <Image url="@../assests/smile_eye_close.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="25.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="25.0" layoutY="99.0" onMouseClicked="#happyCry" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="10">
                            <image>
                               <Image url="@../assests/smile_real.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="25.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="25.0" layoutY="99.0" onMouseClicked="#dream" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="13">
                            <image>
                               <Image url="@../assests/tuinnn.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="100.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="100.0" layoutY="12.0" onMouseClicked="#cryNo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
                            <image>
                               <Image url="@../assests/sad_head.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="100.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="100.0" layoutY="56.0" onMouseClicked="#normal" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7">
                            <image>
                               <Image url="@../assests/smile_normal.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="100.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="10">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="100.0" layoutY="99.0" onMouseClicked="#wonder" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="10">
                            <image>
                               <Image url="@../assests/smile_two.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="100.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="13">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="100.0" layoutY="142.0" onMouseClicked="#wow" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="13">
                            <image>
                               <Image url="@../assests/woow.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="172.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="4">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="172.0" layoutY="12.0" onMouseClicked="#cryYes" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="4">
                            <image>
                               <Image url="@../assests/sad_one.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="172.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="7">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="172.0" layoutY="56.0" onMouseClicked="#happy" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="7">
                            <image>
                               <Image url="@../assests/smile_one.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="172.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="10">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="172.0" layoutY="99.0" onMouseClicked="#joke" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="10">
                            <image>
                               <Image url="@../assests/tong_face.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="172.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="13">
+                        <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="172.0" layoutY="56.0" onMouseClicked="#sad" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="13">
                            <image>
                               <Image url="@../assests/sad_eye_close.png" />
                            </image>

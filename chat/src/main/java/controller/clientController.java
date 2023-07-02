@@ -167,6 +167,9 @@ public class clientController extends Thread{
    }
 
    public void annoying(MouseEvent event) {
+      String emoji = new String(Character.toChars(128546));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 
@@ -176,26 +179,44 @@ public class clientController extends Thread{
    }
 
    public void cryNo(MouseEvent event) {
+      String emoji = new String(Character.toChars(128550));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 
    public void cryYes(MouseEvent event) {
+      String emoji = new String(Character.toChars(128546));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 
    public void dream(MouseEvent event) {
+      String emoji = new String(Character.toChars(128519));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 
    public void eww(MouseEvent event) {
+      String emoji = new String(Character.toChars(128560));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 
    public void happy(MouseEvent event) {
+      String emoji = new String(Character.toChars(128522));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 
    public void happyCry(MouseEvent event) {
+      String emoji = new String(Character.toChars(128514));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 
@@ -204,14 +225,23 @@ public class clientController extends Thread{
    }
 
    public void joke(MouseEvent event) {
+      String emoji = new String(Character.toChars(128539));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 
    public void kidding(MouseEvent event) {
+      String emoji = new String(Character.toChars(128540));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 
    public void love(MouseEvent event) {
+      String emoji = new String(Character.toChars(128525));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 
@@ -241,21 +271,21 @@ public class clientController extends Thread{
    }
 
    public void money(MouseEvent event) {
-      String emoji = new String(Character.toChars(128546));
+      String emoji = new String(Character.toChars(129297));
       messageField.setText(emoji);
       emojiPane.setVisible(false);
 
    }
 
    public void normal(MouseEvent event) {
-      String emoji = new String(Character.toChars(128546));
+      String emoji = new String(Character.toChars(128578));
       messageField.setText(emoji);
       emojiPane.setVisible(false);
 
    }
 
    public void sad(MouseEvent event) {
-      String emoji = new String(Character.toChars(128546));
+      String emoji = new String(Character.toChars(128554));
       messageField.setText(emoji);
       emojiPane.setVisible(false);
 
@@ -276,10 +306,16 @@ public class clientController extends Thread{
    }
 
    public void wonder(MouseEvent event) {
+      String emoji = new String(Character.toChars(128513));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 
    public void wow(MouseEvent event) {
+      String emoji = new String(Character.toChars(128559));
+      messageField.setText(emoji);
+      emojiPane.setVisible(false);
 
    }
 }
